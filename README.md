@@ -1,6 +1,6 @@
 # Topic: Game O An Quan
 ### Run the program
-Run the GUI.java file to lauch the project.
+Run the GUI.java file or lauch OAnQuan.jar file.
 ### JDK: Java 15.02
 ### Tech: JavaSwing
 ### Member
