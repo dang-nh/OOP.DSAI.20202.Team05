@@ -205,8 +205,8 @@ public class Controller {
                 }
                 this.action_eatStep = 0;
                 this.count_eat = 0;
-                eatAction(step, this.selected_Id);
                 count_eat_number++;
+                eatAction(step, this.selected_Id);
                 if (count_eat_number >= 2 && this.selected_Id != 0 && this.selected_Id != 6) {
                     if (MainGame.music_on) {
                         if (Game.GOOD_DIRECT.isPlaying()) {
@@ -489,14 +489,28 @@ public class Controller {
 
     // eat stone
     public void eatStone(Step step, int current_Id) {
+        int numberStone;
         if (isPlayer1(step)) {
-            int numberStone = getStone(current_Id);
+            numberStone = getStone(current_Id);
             player1.currentScore += numberStone;
             player1.numberStone_have += numberStone;
         } else {
-            int numberStone = getStone(current_Id);
+            numberStone = getStone(current_Id);
             player2.currentScore += numberStone;
             player2.numberStone_have += numberStone;
+        }
+
+        if (numberStone > 7 && this.count_eat_number == 1) {
+            if (MainGame.music_on) {
+                if (Game.EAT_MUCH.isPlaying()) {
+                    Game.EAT_MUCH.stop();
+                }
+                try {
+                    Game.EAT_MUCH.play();
+                } catch (UnsupportedAudioFileException | LineUnavailableException | IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
@@ -575,7 +589,7 @@ public class Controller {
     }
 
     /**
-     * Set token for turn
+     * Set token for turn of animation
      * if player1 => turnToken = 5 else turnToken = 6
      *
      * @param step => current step

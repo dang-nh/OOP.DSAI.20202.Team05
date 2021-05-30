@@ -61,6 +61,7 @@ public class Game {
     public static final AudioAction GAMEOVER = Sound.GAMEOVER;
     public static final AudioAction INGAME = Sound.INGAME;
     public static final AudioAction EAT_BOSS = Sound.EAT_BOSS;
+    public static final AudioAction EAT_MUCH = Sound.EAT_MUCH;
     public static final AudioAction ADD_STONE = Sound.ADD_STONE;
     public static final AudioAction ROLLBACK = Sound.ROLLBACK;
     public static final AudioAction GOOD_DIRECT = Sound.GOOD_DIRECT;

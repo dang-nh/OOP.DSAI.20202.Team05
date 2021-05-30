@@ -64,7 +64,7 @@ public class ChessHouse extends House {
         graphics2D.setColor(Color.gray);
         if (getNumberStone() == 0) {
             if (isChoose) {
-                System.out.println("House is empty!");
+//                System.out.println("House is empty!");
             }
         } else if ((getNumberStone() <= 7) && (getNumberStone() >= 1)) {
             graphics2D.drawImage(ImageGame.Stones[getNumberStone()], getX(), getY(), null);

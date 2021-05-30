@@ -76,7 +76,7 @@ public class BossHouse extends House {
             // Draw stone
             if (getNumberStone() == 0) {
                 if (this.getPopulation() == 0) {
-                    setPopulation(this.getPopulation());
+//                    System.out.println("BossHouse is empty!");
                 }
             } else if ((getNumberStone() <= 7) && (getNumberStone() >= 1)) {
                 graphics2D.drawImage(ImageGame.Stones[getNumberStone()], getX() - 5 + 100, getY() + 30, null);
@@ -92,7 +92,7 @@ public class BossHouse extends House {
             graphics2D.drawString(String.valueOf(this.getPopulation()), 200, 470);
             if (getNumberStone() == 0) {
                 if (this.getPopulation() == 0) {
-                    setPopulation(this.getPopulation());
+//                    System.out.println("BossHouse is empty!");
                 }
             } else if ((getNumberStone() <= 7) && (getNumberStone() >= 1)) {
                 graphics2D.drawImage(ImageGame.Stones[getNumberStone()], getX() - 5, getY() + 25, null);

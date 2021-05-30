@@ -8,6 +8,7 @@ public class Sound {
     public static AudioAction GAMEOVER;
     public static AudioAction INGAME;
     public static AudioAction EAT_BOSS;
+    public static AudioAction EAT_MUCH;
     public static AudioAction ADD_STONE;
     public static AudioAction ROLLBACK;
     public static AudioAction GOOD_DIRECT;
@@ -22,6 +23,9 @@ public class Sound {
 
         EAT_BOSS = new AudioAction("/Static/sounds/eat_boss.wav");
         EAT_BOSS.setVolumeNumber(100);
+
+        EAT_MUCH = new AudioAction("/Static/sounds/eat_much.wav");
+        EAT_MUCH.setVolumeNumber(100);
 
         ADD_STONE = new AudioAction("/Static/sounds/add_stone.wav");
         ADD_STONE.setVolumeNumber(100);
