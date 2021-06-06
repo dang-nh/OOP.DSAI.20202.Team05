@@ -1,7 +1,9 @@
 # Topic: Game O An Quan
 ### Run the program
 Run the GUI.java file or lauch OAnQuan.jar file.
-### JDK: Java 15.02
+### Presentaion Url
+https://bitly.com.vn/hulwy0
+### JDK: Java 15
 ### Tech: JavaSwing
 ### Member
 | Name | MSSV | Email |
